@@ -51,7 +51,7 @@ post_install do |installer|
       end
     end
     target.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '17.2'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '18.0.1'
       config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "i386"
 
       ## permission handler
